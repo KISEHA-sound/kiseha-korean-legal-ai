@@ -29,9 +29,6 @@ kiseha-p1/
 - 문서마다 `source`, `article` 메타데이터 추가
 - `normalize_L2=True` 설정으로 코사인 유사도 기반 검색 가능
 
-#### 기존 DB 상태
-![기존 DB](images/FAISS벡터DB_before.png)
-
 #### 제XX조 기반 정제된 DB 상태
 ![제XX조 기반 정제된 DB](images/FAISS벡터DB_after.png)
   
@@ -40,6 +37,12 @@ kiseha-p1/
 - 프론트에서 질문 + 법률 종류 전달 → 백엔드에서 해당 FAISS DB 로딩
 - `Top-K` 관련 법 조항 검색 (예: 2~3개)  - 현재: 2개
 - 관련 조항 기반 `context` 구성 → GPT에 전달
+
+#### 유사도 기준 비교(개선 전)
+![(유사도 기존)](images/유사도_before.png)
+#### 유사도 기준 비교(개선 후)
+![(유사도 기존)](images/유사도_after.png)
+  
 
 ### ✅ GPT 기반 법률 상담 생성
 - GPT-3.5 / GPT-4 모델로 응답 생성 - 현재 : gpt-4-turbo
