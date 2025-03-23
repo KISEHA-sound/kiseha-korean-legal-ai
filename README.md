@@ -29,7 +29,10 @@ kiseha-p1/
 - 문서마다 `source`, `article` 메타데이터 추가
 - `normalize_L2=True` 설정으로 코사인 유사도 기반 검색 가능
 
+#### 기존 DB 상태
 ![기존 DB](images/FAISS벡터DB_before.png)
+
+#### 제XX조 기반 정제된 DB 상태
 ![제XX조 기반 정제된 DB](images/FAISS벡터DB_after.png)
   
 
