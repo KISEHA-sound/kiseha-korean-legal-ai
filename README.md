@@ -5,7 +5,7 @@ GPT-3.5 및 GPT-4, LangChain과 RAG 기법을 활용하여 사용자의 법률 �
 
 ## 🚀 사용 기술
 - LLM: GPT-3.5-turbo / GPT-4-turbo - 자연어 처리 및 답변 생성
-- LangChain: RAG 구성에 도움이 된 프롬프트
+- LangChain: LLM, RAG 구성에 도움이 된 프롬프트 (※ LLM은 GPT를 직접 부르고 RAG만 씀)
 - FAISS + KoSBERT: 한국어 문서를 벡터화하여 유사도 검색 (모델: `jhgan/ko-sbert-nli`)
 - FastAPI: 백엔드 API 서버 구축
 - React: 프론트엔드 사용자 인터페이스
