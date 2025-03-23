@@ -98,6 +98,9 @@ system_prompt = """
 - LangChain RAG가 관련 법 조항 Top-K 추출
 - GPT-3.5/4가 요약 + 전략 제시
 
+#### GPT 기반 LangChain RAG 구조 흐름도
+![시스템 구조 흐름도](images/시스템구조.png)
+
 ## 🧠 LLM & 벡터 DB 조합의 강점
 - 법 조항을 ‘제XX조’ 단위로 정리해 맥락 유지
 - `FAISS.from_documents()` + 메타데이터 → 출처 추적 가능
