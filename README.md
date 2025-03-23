@@ -34,6 +34,7 @@ kiseha-p1/
 #### FAISS 개선 전 결과(기존 DB)
 ![FAISS 개선 전 결과](images/FAISS벡터DB_before.png)  
 *기존 FAISS 벡터DB - 조항 단위가 아닌 단순 청크 기준 분할로 유사도 낮음*
+
 ####FAISS 개선 후 결과(제XX조 기반 정제된 DB)
 ![제XX조 기반 정제된 DB](images/FAISS벡터DB_after.png)
   
