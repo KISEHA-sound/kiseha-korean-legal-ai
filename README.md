@@ -1,13 +1,13 @@
 # 💼 나만의 AI 변호사: GPT-3.5/4 + LangChain RAG 기반 법률 상담 시스템
 
 ## ✨ 개요
-GPT-3.5 및 GPT-4, LangChain과 RAG 기법을 활용하여 \n사용자의 법률 질문에 대해 분석?과 전략을 제공하는 개인 맞춤형 AI 법률 상담 시스템입니다.
+GPT-3.5 및 GPT-4, LangChain과 RAG 기법을 활용하여 사용자의 법률 질문에 대해 분석?과 전략을 제공하는 개인 맞춤형 AI 법률 상담 시스템입니다.
 
 ![메인 화면](images/메인화면.png)
 
 ## 🚀 사용 기술
 - LLM: GPT-3.5-turbo / GPT-4-turbo - 자연어 처리 및 답변 생성
-- LangChain: LLM, RAG 구성에 도움이 된 프롬프트 (📌 LLM은 GPT를 직접 부르고 RAG만 씀)
+- LangChain: LLM, RAG 구성에 도움이 된 프롬프트 (📌 LLM은 GPT를 직접 부르고 RAG만 사용!)
 - FAISS + KoSBERT: 한국어 문서를 벡터화하여 유사도 검색 (모델: `jhgan/ko-sbert-nli`)
 - FastAPI: 백엔드 API 서버 구축
 - React: 프론트엔드 사용자 인터페이스
@@ -31,7 +31,10 @@ kiseha-p1/
 - 문서마다 `source`, `article` 메타데이터 추가
 - `normalize_L2=True` 설정으로 코사인 유사도 기반 검색 가능
 
-#### 제XX조 기반 정제된 DB 상태
+#### FAISS 개선 전 결과(기존 DB)
+![FAISS 개선 전 결과](images/FAISS벡터DB_before.png)  
+*기존 FAISS 벡터DB - 조항 단위가 아닌 단순 청크 기준 분할로 유사도 낮음*
+####FAISS 개선 후 결과(제XX조 기반 정제된 DB)
 ![제XX조 기반 정제된 DB](images/FAISS벡터DB_after.png)
   
 
